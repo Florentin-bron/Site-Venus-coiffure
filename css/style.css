@@ -207,16 +207,8 @@ a.left:hover:before {
     transform: translate(0%, -50%);
 }
 .close:hover {background: #bbb;}
-.marbre{
-    background-image: url("../image/marbre_noir2.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-width: 100%;
-    height:4vw;
-}
 .marbre2{
-    background-image: url("../image/marbre_blanc_scaled.jpg");
+    background-image: url("../image/marbre_blanc_scaled.webp");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -438,7 +430,7 @@ a.left:hover:before {
     width: 80vw;
     left: 50%;
     height: 90vh;
-    background-image: url("../image/map.jpg");
+    background-image: url("../image/map.webp");
     background-position: center;
     text-align: center;
     box-shadow:0px 0px 40px #ffffff;
