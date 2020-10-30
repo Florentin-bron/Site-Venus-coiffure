@@ -1,3 +1,4 @@
+# netlify.toml
 [[plugins]]
 package = "@netlify/plugin-sitemap"
 
