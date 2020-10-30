@@ -1,3 +1,11 @@
+@font-face {
+    font-family: gilroy_bold;
+    src: url('../font/gilroy_B.otf');
+}
+@font-face {
+    font-family: gilroy;
+    src: url('../font/gilroy_L.otf');
+}
 @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
@@ -38,18 +46,7 @@
     from {opacity: 0; top:1000px;}
     to {opacity: 1;}
 }
-@font-face {
-    font-family: manrope;
-    src: url('../font/manrope/regular.otf');
-}
-@font-face {
-    font-family: gilroy_bold;
-    src: url('../font/gilroy_B.otf');
-}
-@font-face {
-    font-family: gilroy;
-    src: url('../font/gilroy_L.otf');
-}
+
 body {
     margin:0;
     z-index: 1;
