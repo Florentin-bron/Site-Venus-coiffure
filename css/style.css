@@ -128,6 +128,12 @@ a.left:hover:before {
 @media screen and (max-width: 600px){
     .back-1{
         background-image: url("../image/back_1_2_2_scaled_phone.webp");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+        position: relative;
     }
 
 }
