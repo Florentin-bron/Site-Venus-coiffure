@@ -125,6 +125,12 @@ a.left:hover:before {
     min-height: 100vh;
     position: relative;
 }
+@media screen and (max-width: 600px){
+    .back-1{
+        background-image: url("../image/back_1_2_2_scaled_phone.webp");
+    }
+
+}
 .titre{
     z-index: 3;
     position:absolute;
