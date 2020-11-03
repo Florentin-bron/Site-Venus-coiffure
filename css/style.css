@@ -216,6 +216,7 @@ a.left:hover:before {
 }
 @media screen and (max-width: 600px){
     .marbre2{
+        background-image: url("../image/marbre_blanc_scaled_phone.webp");
         height: 10vw;
     }
 
@@ -438,8 +439,26 @@ a.left:hover:before {
     }
 
 }
-.box_2{
+.box_itineraire{
     width: 30%;
+    height: auto;
+    background-color: #EFD8C5;
+    border-radius: 25px;
+    padding: 40px;
+    margin: 20px;
+    box-sizing: border-box;
+    font-size: 25px;
+    font-family: gilroy, sans-serif;
+    text-align: center;
+    transition: all .1s ease-in-out;
+}
+@media screen and (max-width: 600px){
+    .box_2 a p{
+        font-size: 4vw;
+    }
+
+}
+.box_2{
     height: auto;
     background-color: #EFD8C5;
     text-decoration: underline;
@@ -447,6 +466,8 @@ a.left:hover:before {
     box-sizing: border-box;
     font-family: gilroy, sans-serif;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 .box_2 a{
@@ -456,21 +477,23 @@ a.left:hover:before {
 }
 @media screen and (max-width: 600px){
     .box_2 a p{
-        font-size: 4vw;
+        font-size: 7vw;
     }
 
 }
 .box_3 {
-    width: 30%;
     height: auto;
     background-color: #cbcbcb;
     border-radius: 25px;
+    border-style: solid;
     padding: 20px;
     font-size: 20px;
     box-sizing: border-box;
     font-family: gilroy, sans-serif;
     text-align: center;
     transition: all .2s ease-in-out;
+    margin-left: auto;
+    margin-right: auto;
 }
 .box_3:hover {
     transform: scale(1.1);
@@ -524,6 +547,9 @@ a.left:hover:before {
 }
 @media screen and (max-width: 600px){
     .box{
+        width: 90%;
+    }
+    .box_itineraire{
         width: 90%;
     }
     .box_2{
