@@ -9,9 +9,9 @@
     <title>Vénus Coiffure - salon de coiffure mixte à Ruy-Montceau</title>
     <link rel="icon" href="favicon.png" type="image/x-icon"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" as="style">
 </head>
-<body>
+<body onload="window.addEventListener('resize', setPanels); setPanels();">
 <div class="topnav milieu" id="Topnav">
     <a class="active" href="index.html">ACCUEIL</a>
     <a class="left" href="#salon">Le salon</a>
@@ -41,22 +41,22 @@
     <h2 class="T_salon">Le Salon</h2>
     <div class = "slideshow-container">
         <div class = "slidepicture fadeing">
-            <img alt="Devanture du salon" src ="image/salon_1_2.webp">
+            <img class="resizable" alt="Devanture du salon" src ="image/salon_1_2">
             <div class ="caption"></div>
         </div>
 
         <div class = "slidepicture fadeing">
-            <img alt="Première image du salon intérieur" src ="image/salon_4.webp">
+            <img class="resizable" alt="Première image du salon intérieur" src ="image/salon_4">
             <div class ="caption"></div>
         </div>
 
         <div class = "slidepicture fadeing">
-            <img alt="Deuxième image du salon intérieur" src ="image/salon_5.webp">
+            <img class="resizable" alt="Deuxième image du salon intérieur" src ="image/salon_5">
             <div class ="caption"></div>
         </div>
 
         <div class = "slidepicture fadeing">
-            <img alt="Troisième image du salon intérieur" src ="image/salon_6.webp">
+            <img class="resizable" alt="Troisième image du salon intérieur" src ="image/salon_6">
             <div class ="caption"></div>
         </div>
 
@@ -117,11 +117,11 @@
     </div>
     <div class="container">
         <div class="box_itineraire">
-            <div class="box_2"> <a href="https://bit.ly/3e4LuBZ" rel="noopener noreferrer" target="_blank"><p>Itinéraire</p></a> </div>
+            <div class="box_2" title="Cliquez afin obtenir un itinéraire pour accéder au salon"> <a href="https://bit.ly/3e4LuBZ" rel="noopener noreferrer" target="_blank"><p>Itinéraire</p></a> </div>
             <div class="box_3"><p>40 Rue de la Salière 38300 Ruy-Montceau<br>France</p></div>
         </div>
         <div class="box_itineraire">
-            <div class="box_2"> <a href="tel:+33-4-74-28-41-85" rel="noopener noreferrer" target="_blank"><p>Appeler dès maintenant</p></a> </div>
+            <div class="box_2" title="Cliquez pour appeler depuis votre téléphone"> <a href="tel:+33-4-74-28-41-85" rel="noopener noreferrer" target="_blank"><p>Appeler dès maintenant</p></a> </div>
             <div class="box_3"><p>04 74 28 41 85</p></div>
         </div>
 

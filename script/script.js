@@ -31,5 +31,20 @@ function showSlides(n) {
     }
     slides[slideIndex-1].style.display = "block";
 }
-
-
+function setPanels()
+{
+        var windowWidth = window.innerWidth;
+        if(windowWidth < 600)
+        {
+            var elems = document.getElementsByClassName("resizable");
+            for (var i = 0; i < elems.length; i+= 1) {
+                elems[i].src = elems[i].src+"_phone.webp";
+            }
+        }
+        else{
+            var desk = document.getElementsByClassName("resizable");
+            for (var j = 0; j < desk.length; j+= 1) {
+                desk[j].src =desk[j].src+ ".webp";
+            }
+        }
+}
