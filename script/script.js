@@ -9,6 +9,25 @@ function myFunction() {
 function fermer() {
     document.getElementById("warning").style.display="none"
 }
+function setPanels()
+{
+    var windowWidth = window.innerWidth;
+    if(windowWidth < 600)
+    {
+        document.getElementById('car_1').src = 'image/salon_1_2_phone.webp';
+        document.getElementById('car_2').src = 'image/salon_4_phone.webp';
+        document.getElementById('car_3').src = 'image/salon_5_phone.webp';
+        document.getElementById('car_4').src = 'image/salon_6_phone.webp';
+    }
+    else
+    {
+        document.getElementById('car_1').src = 'image/salon_1_2.webp';
+        document.getElementById('car_2').src = 'image/salon_4.webp';
+        document.getElementById('car_3').src = 'image/salon_5.webp';
+        document.getElementById('car_4').src = 'image/salon_6.webp';
+    }
+}
+
 
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -30,22 +49,4 @@ function showSlides(n) {
         slides[i].style.display = "none";
     }
     slides[slideIndex-1].style.display = "block";
-}
-function setPanels()
-{
-        var windowWidth = window.innerWidth;
-    if(windowWidth < 600)
-    {
-        document.getElementById('car_1').src = 'image/salon_1_2_phone.webp';
-        document.getElementById('car_2').src = 'image/salon_4_phone.webp';
-        document.getElementById('car_3').src = 'image/salon_5_phone.webp';
-        document.getElementById('car_4').src = 'image/salon_6_phone.webp';
-    }
-    else
-    {
-        document.getElementById('car_1').src = 'image/salon_1_2.webp';
-        document.getElementById('car_2').src = 'image/salon_4.webp';
-        document.getElementById('car_3').src = 'image/salon_5.webp';
-        document.getElementById('car_4').src = 'image/salon_6.webp';
-    }
 }
