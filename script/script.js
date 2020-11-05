@@ -28,6 +28,48 @@ function setPanels()
     }
 }
 
+function setStatut() {
+    var date = new Date();
+    var d = date.getDay();
+    var h = date.getHours();
+    var m = date.getMinutes();
+    if(d===1 || d===0 ){
+        document.getElementById("statut").innerHTML = 'Salon fermé';
+        document.getElementById('statut_img').src = 'image/red_dot.webp';
+    }else if(d===2){
+        if(h>9 && h<12 || h>14 && h<18){
+            document.getElementById("statut").innerHTML = 'Salon ouvert';
+            document.getElementById('statut_img').src = 'image/green_dot.webp';
+        } else {
+            document.getElementById("statut").innerHTML = 'Salon fermé';
+            document.getElementById('statut_img').src = 'image/red_dot.webp';
+        }
+    }else if(d===3){
+        if(h>9 && h<18){
+            document.getElementById("statut").innerHTML = 'Salon ouvert';
+            document.getElementById('statut_img').src = 'image/green_dot.webp';
+        } else {
+            document.getElementById("statut").innerHTML = 'Salon fermé';
+            document.getElementById('statut_img').src = 'image/red_dot.webp';
+        }
+    } else if(d===4 || d===5){
+        if(h>9 && h<19){
+            document.getElementById("statut").innerHTML = 'Salon ouvert';
+            document.getElementById('statut_img').src = 'image/green_dot.webp';
+        } else {
+            document.getElementById("statut").innerHTML = 'Salon fermé';
+            document.getElementById('statut_img').src = 'image/red_dot.webp';
+        }
+    } else if(d===6){
+        if(h>8 && m>30 && h<17 || h>9 && h<17){
+            document.getElementById("statut").innerHTML = 'Salon ouvert';
+            document.getElementById('statut_img').src = 'image/green_dot.webp';
+        } else {
+            document.getElementById("statut").innerHTML = 'Salon fermé';
+            document.getElementById('statut_img').src = 'image/red_dot.webp';
+        }
+    }
+}
 
 var slideIndex = 1;
 showSlides(slideIndex);

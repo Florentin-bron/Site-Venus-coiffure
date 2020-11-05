@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css" as="style">
 </head>
-<body onload="window.addEventListener('resize', setPanels); setPanels();">
+<body onload="window.addEventListener('resize', setPanels); setPanels(); setStatut();">
 <div class="topnav milieu" id="Topnav">
     <a class="active" href="index.html">ACCUEIL</a>
     <a class="left" href="#salon">Le salon</a>
@@ -89,6 +89,10 @@
                 <li>Samedi: 08:30–17:00</li>
                 <li>Dimanche: Fermé</li>
             </ul>
+        </div>
+        <div class="box_3">
+            <p id="statut"> </p>
+            <img id="statut_img" class="statut_img" src="" alt="logo statut d'ouverture">
         </div>
     </div>
 </div>

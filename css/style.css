@@ -222,6 +222,9 @@ a.left:hover:before {
     background: #000000;
     color: #FFFFFF;
 }
+.statut_img{
+width: 30px;
+}
 .marbre2{
     background-image: url("../image/marbre_blanc_scaled.webp");
     background-attachment: fixed;
