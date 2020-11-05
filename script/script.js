@@ -34,17 +34,18 @@ function showSlides(n) {
 function setPanels()
 {
         var windowWidth = window.innerWidth;
-        if(windowWidth < 600)
-        {
-            var elems = document.getElementsByClassName("resizable");
-            for (var i = 0; i < elems.length; i+= 1) {
-                elems[i].src = elems[i].src+"_phone.webp";
-            }
-        }
-        else{
-            var desk = document.getElementsByClassName("resizable");
-            for (var j = 0; j < desk.length; j+= 1) {
-                desk[j].src =desk[j].src+ ".webp";
-            }
-        }
+    if(windowWidth < 600)
+    {
+        document.getElementById('car_1').src = 'image/salon_1_2_phone.webp';
+        document.getElementById('car_2').src = 'image/salon_4_phone.webp';
+        document.getElementById('car_3').src = 'image/salon_5_phone.webp';
+        document.getElementById('car_4').src = 'image/salon_6_phone.webp';
+    }
+    else
+    {
+        document.getElementById('car_1').src = 'image/salon_1_2.webp';
+        document.getElementById('car_2').src = 'image/salon_4.webp';
+        document.getElementById('car_3').src = 'image/salon_5.webp';
+        document.getElementById('car_4').src = 'image/salon_6.webp';
+    }
 }
