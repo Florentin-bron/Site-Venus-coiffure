@@ -222,9 +222,29 @@ a.left:hover:before {
     background: #000000;
     color: #FFFFFF;
 }
+.box_statut {
+    height: auto;
+    width: 30%;
+    margin-bottom: 50px;
+    background-color: #cbcbcb;
+    border-radius: 25px;
+    border-style: solid;
+    padding: 20px;
+    font-size: 20px;
+    box-sizing: border-box;
+    font-family: gilroy, sans-serif;
+    text-align: center;
+    transition: all .2s ease-in-out;
+    margin-left: auto;
+    margin-right: auto;
+}
+.box_statut:hover {
+    transform: scale(1.1);
+}
 .statut_img{
 width: 30px;
 }
+
 .marbre2{
     background-image: url("../image/marbre_blanc_scaled.webp");
     background-attachment: fixed;
@@ -576,6 +596,9 @@ width: 30px;
 @media screen and (max-width: 600px){
     .box{
         width: 90%;
+    }
+    .box_statut{
+        width: 50%;
     }
     .box_itineraire{
         width: 90%;
